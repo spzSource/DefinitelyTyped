@@ -13,30 +13,29 @@ declare module 'adal' {
 declare namespace adal {
 
     interface Config {
-        tenant?: string;
-        clientId: string;
-        redirectUri?: string;
-        cacheLocation?: string;
-        displayCall?: (urlNavigate: string) => any;
-        correlationId?: string;
-        loginResource?: string;
-        resource?: string;
-        endpoints?: any;  // If you need to send CORS api requests.
-        extraQueryParameter?: string;
-	    postLogoutRedirectUri?: string;
+        tenant?: string,
+        clientId: string,
+        redirectUri?: string,
+        cacheLocation?: string,
+        displayCall?: (urlNavigate: string) => any,
+        correlationId?: string,
+        loginResource?: string,
+        resource?: string
+        endpoints?: any  // If you need to send CORS api requests.
+        extraQueryParameter?: string
     }
 
     interface User {
-        userName: string;
-        profile: any;
+        userName: string,
+        profile: any
     }
 
     interface RequestInfo {
-        valid: boolean;
-        parameters: any;
-        stateMatch: boolean;
-        stateResponse: string;
-        requestType: string;
+        valid: boolean,
+        parameters: any,
+        stateMatch: boolean,
+        stateResponse: string,
+        requestType: string
     }
     
     interface Logging {
